@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt", "r")
+# sys.stdin = open("input.txt", "r")
 
 N, K = map(int, input().split())
 
@@ -10,5 +10,5 @@ while True:
     result.append(people.pop(i))
     if not people:
         break
-    i = (i+k-1) % len(people)
+    i = (i+K-1) % len(people)
 print('<'+','.join(map(str,result))+'>')
