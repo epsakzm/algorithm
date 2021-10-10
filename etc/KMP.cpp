@@ -11,13 +11,9 @@ vector<int> makeTable(string pattern)
     for (int i = 1; i < patternSize; i++)
     {
         while (j > 0 && pattern[i] != pattern[j])
-        {
             j = table[j - 1];
-        }
         if (pattern[i] == pattern[j])
-        {
             table[i] = ++j;
-        }
     }
     return table;
 }
@@ -30,9 +26,7 @@ void KMP(string parent, string pattern)
     for (int i = 0; i < parentSize; i++)
     {
         while (j > 0 && parent[i] != pattern[j])
-        {
             j = table[j - 1];
-        }
         if (parent[i] == pattern[j])
         {
             if (j == patternSize - 1)
@@ -41,9 +35,7 @@ void KMP(string parent, string pattern)
                 j = table[j];
             }
             else
-            {
                 j++;
-            }
         }
     }
 }
