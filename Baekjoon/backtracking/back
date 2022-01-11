@@ -1,0 +1,75 @@
+package Baekjoon.backtracking;
+
+import java.util.Scanner;
+
+public class Sudoku {
+    static int[][] map = new int[9][9];
+
+    private static void read() {
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < 9; ++i)
+            for (int j = 0; j < 9; ++j)
+                map[i][j] = sc.nextInt();
+        sc.close();
+    }
+    
+    private static void dfs(int r, int c) {
+        if (c == 9) {
+            dfs(r + 1, 0);
+            return;
+        }
+
+        if (r == 9) {
+            printMap();
+            // 0000000....인 경우 너무 많음
+            System.exit(0);
+        }
+
+        if (map[r][c] == 0) {
+            for (int num = 1; num <= 9; ++num) {
+                if (check(r, c, num)) {
+                    map[r][c] = num;
+                    dfs(r, c + 1);
+                }
+            }
+            map[r][c] = 0;
+        } else
+            dfs(r, c + 1);
+    }
+
+    private static boolean check(int r, int c, int target) {
+        // 행 체크
+        for (int mc = 0; mc < 9; ++mc)
+            if (map[r][mc] == target)
+                return false;
+
+        // 열 체크
+        for (int mr = 0; mr < 9; ++mr)
+            if (map[mr][c] == target)
+                return false;
+
+        // 3x3 체크
+        int startR = r / 3 * 3;
+        int startC = c / 3 * 3;
+
+        for (int i = startR; i < startR + 3; i++)
+            for (int j = startC; j < startC + 3; j++)
+                if (map[i][j] == target)
+                    return false;
+
+        return true;
+    }
+
+    private static void printMap() {
+        for (int i = 0; i < 9; ++i) {
+            for (int j = 0; j < 9; ++j)
+                System.out.print(map[i][j] + " ");
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        read();
+        dfs(0, 0);
+    }
+}
