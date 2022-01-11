@@ -76,3 +76,8 @@ Temporary Items
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,executable,git
+
+# yet done
+ExpressionMaximum.java
+algorithm.iml
+out/
