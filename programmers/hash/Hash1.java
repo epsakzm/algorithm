@@ -42,13 +42,13 @@ public class Hash1 {
     // kiki eden
 
     public static void main(String[] args) {
-        String[] participant = { "leo", "kiki", "eden" };
+        // String[] participant = { "leo", "kiki", "eden" };
         // String[] participant = { "marina", "josipa", "nikola", "vinko", "filipa" };
-        // String[] participant = { "mislav", "stanko", "mislav", "ana" };
+        String[] participant = { "mislav", "stanko", "mislav", "ana", "mislav", "mislav", "mislav" };
 
-        String[] completion = { "eden", "kiki" };
+        // String[] completion = { "eden", "kiki" };
         // String[] completion = { "josipa", "filipa", "marina", "nikola" };
-        // String[] completion = { "stanko", "ana", "mislav" };
+        String[] completion = { "stanko", "ana", "mislav", "mislav", "mislav" };
         System.out.println(new Hash1().solution(participant, completion));
     }
 }
