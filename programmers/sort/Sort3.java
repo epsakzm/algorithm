@@ -6,6 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Sort3 {
 
+    // TC 9번 통과 안됨
     public int solution(int[] citations) {
         AtomicInteger h = new AtomicInteger();
         Arrays.stream(citations)
