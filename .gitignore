@@ -82,3 +82,5 @@ ExpressionMaximum.java
 NewsClustering.java
 algorithm.iml
 out/
+.idea/
+*_NO.java
