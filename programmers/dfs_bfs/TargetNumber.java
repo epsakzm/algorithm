@@ -1,4 +1,4 @@
-package programmers;
+package programmers.dfs_bfs;
 
 // https://programmers.co.kr/learn/courses/30/lessons/43165
 public class TargetNumber {
@@ -9,7 +9,6 @@ public class TargetNumber {
         return answer;
     }
 
-    // 63
     public void dfs(int value, int depth, int[] numbers, int target) {
         if (depth == numbers.length) {
             if (value == target)
