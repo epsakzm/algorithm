@@ -1,8 +1,6 @@
 package programmers;
 
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 //https://programmers.co.kr/learn/courses/30/lessons/1845
 public class Ponkemon {
