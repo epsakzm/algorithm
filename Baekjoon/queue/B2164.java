@@ -1,4 +1,4 @@
-package etc;
+package Baekjoon.queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
