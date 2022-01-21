@@ -1,4 +1,4 @@
-package programmers;
+package programmers.math;
 
 // https://programmers.co.kr/learn/courses/30/lessons/77884
 public class Divisor {

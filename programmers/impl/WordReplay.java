@@ -1,10 +1,10 @@
-package programmers;
+package programmers.impl;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Text1 {
+public class WordReplay {
     public int[] solution(int n, String[] words) {
         Set<String> wordSet = new HashSet<>();
         String before = words[0];
@@ -25,8 +25,8 @@ public class Text1 {
                 { "hello", "observe", "effect", "take", "either", "recognize", "encourage", "ensure", "establish",
                         "hang", "gather", "refer", "reference", "estimate", "executive" },
                 { "hello", "one", "even", "never", "now", "world", "draw" } };
-        System.out.println(Arrays.toString(new Text1().solution(n[0], words[0])));
-        System.out.println(Arrays.toString(new Text1().solution(n[1], words[1])));
-        System.out.println(Arrays.toString(new Text1().solution(n[2], words[2])));
+        System.out.println(Arrays.toString(new WordReplay().solution(n[0], words[0])));
+        System.out.println(Arrays.toString(new WordReplay().solution(n[1], words[1])));
+        System.out.println(Arrays.toString(new WordReplay().solution(n[2], words[2])));
     }
 }

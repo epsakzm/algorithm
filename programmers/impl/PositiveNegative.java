@@ -1,4 +1,4 @@
-package programmers;
+package programmers.impl;
 
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;

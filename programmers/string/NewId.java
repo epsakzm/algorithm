@@ -1,4 +1,4 @@
-package programmers;
+package programmers.string;
 
 public class NewId {
     public String solution(String new_id) {

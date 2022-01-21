@@ -1,4 +1,4 @@
-package programmers;
+package programmers.dfs_bfs;
 
 // https://programmers.co.kr/learn/courses/30/lessons/1835
 public class Photo {

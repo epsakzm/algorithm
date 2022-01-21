@@ -1,7 +1,7 @@
-package programmers;
+package programmers.math;
 
 // https://programmers.co.kr/learn/courses/30/lessons/12899
-public class Programmers12899 {
+public class OneTwoFourWorld {
 
     public String solution(int n) {
         StringBuilder sb = new StringBuilder();
@@ -19,6 +19,6 @@ public class Programmers12899 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Programmers12899().solution(10));
+        System.out.println(new OneTwoFourWorld().solution(10));
     }
 }
