@@ -1,4 +1,4 @@
-package programmers.kakao;
+package programmers.string;
 
 //https://programmers.co.kr/learn/courses/30/lessons/81301
 public class NumberString {
