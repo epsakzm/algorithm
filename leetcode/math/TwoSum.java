@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.math;
 
 // https://leetcode.com/problems/two-sum/
 public class TwoSum {
