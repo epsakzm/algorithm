@@ -1,4 +1,4 @@
-package leetcode.TwoPointers;
+package leetcode.twopointers;
 
 import java.util.Arrays;
 
